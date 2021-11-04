@@ -8,10 +8,10 @@ const valueEncoding = {
   decode: buf => Uint8Array.from(buf)
 }
 
-export function createLevelDBHandler (path, doc, level = defaultLevel, levelOptions = {}) {
+export function createLevelDBHandler (path, doc, level = defaultLevel, levelOptions = {}, levelCallback) {
   let currentTransaction = Promise.resolve()
   let db
-  const _db = level(path, { ...levelOptions, valueEncoding })
+  const _db = level(path, { ...levelOptions, valueEncoding }, levelCallback)
 
   // Execute a transaction on a database. This will ensure that other processes are currently not writing.
   const transact = (f) => {
