@@ -91,6 +91,7 @@ export function createLevelDBHandler (path, doc, level = defaultLevel, levelOpti
   const onSnapshot = (_, appliedSnapshot) => storeSnapshot(appliedSnapshot)
 
   const handler = {
+    doc,
     whenSynced,
     destroy () {
       doc.off('update', onUpdate)
