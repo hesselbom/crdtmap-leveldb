@@ -98,7 +98,7 @@ export function createLevelDBHandler (path, doc, level = defaultLevel, levelOpti
       doc.off('snapshot', onSnapshot)
       doc.off('destroy', this.destroy)
 
-      return _db.close()
+      return transact(() => _db.close())
     }
   }
 
