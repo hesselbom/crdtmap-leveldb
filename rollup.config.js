@@ -1,10 +1,10 @@
 export default [
   {
     input: 'src/index.js',
-    external: id => /^(lib0|vjs|level)/.test(id),
+    external: id => /^(lib0|crdtmap|level)/.test(id),
     output: {
-      name: 'VLevelDB',
-      file: 'dist/v-leveldb.cjs',
+      name: 'CrdtMapLevelDB',
+      file: 'dist/crdtmap-leveldb.cjs',
       format: 'cjs',
       sourcemap: true
     }

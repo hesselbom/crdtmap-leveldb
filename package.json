@@ -1,8 +1,8 @@
 {
-  "name": "v-leveldb",
+  "name": "crdtmap-leveldb",
   "version": "0.1.0",
   "license": "MIT",
-  "main": "./dist/v-leveldb.cjs",
+  "main": "./dist/crdtmap-leveldb.cjs",
   "scripts": {
     "dist": "rm -rf dist && rollup -c",
     "prepare": "npm run dist",
@@ -20,6 +20,10 @@
   "dependencies": {
     "level": "^6.0.1",
     "lib0": "^0.2.42",
-    "vjs": "https://github.com/hesselbom/vjs"
+    "crdtmap": "0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hesselbom/crdtmap-leveldb"
   }
 }

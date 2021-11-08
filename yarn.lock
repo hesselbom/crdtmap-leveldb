@@ -2124,6 +2124,13 @@ cosmiconfig@^7.0.1:
     path-type "^4.0.0"
     yaml "^1.10.0"
 
+crdtmap@0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/crdtmap/-/crdtmap-0.1.1.tgz#3ccd01d6ec05aedf02f17aa169e4ffa004efee8c"
+  integrity sha512-UlUHimSISj0tNEwfPwuSZDmc89e9ahlq5bHUaGeJOtJMo6GSazK3EftG/HsLHQXxcmZeJwwTk+KEDQalvvl8WA==
+  dependencies:
+    lib0 "^0.2.42"
+
 create-ecdh@^4.0.0:
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/create-ecdh/-/create-ecdh-4.0.4.tgz#d6e7f4bffa66736085a0762fd3a632684dabcc4e"
@@ -6917,12 +6924,6 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
-
-"vjs@https://github.com/hesselbom/vjs":
-  version "0.1.0"
-  resolved "https://github.com/hesselbom/vjs#ab59a80c63074b5108ae471726a04bc4369b6e83"
-  dependencies:
-    lib0 "^0.2.42"
 
 vm-browserify@^1.1.2:
   version "1.1.2"

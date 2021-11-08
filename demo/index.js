@@ -1,8 +1,8 @@
-const VDoc = require('vjs')
+const CrdtMap = require('crdtmap')
 const levelMem = require('level-mem') // eslint-disable-line
-const { createLevelDBHandler } = require('../dist/v-leveldb.cjs')
+const { createLevelDBHandler } = require('../dist/crdtmap-leveldb.cjs')
 
-const doc = VDoc()
+const doc = CrdtMap()
 // const handler = createLevelDBHandler('./db', doc, levelMem)
 const handler = createLevelDBHandler('./db', doc)
 
